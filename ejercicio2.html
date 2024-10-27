@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Desafio 2 - Ejercicio 2</title>
+</head>
+<body>
+    <h1 class="mensajes">Puedes llevar hasta 10 stickers en total</h1>
+    <div class="conteiner">
+        <div class="opcion">
+            <img class="imagen" src="./assets/img/ejercicio2imagen1.JPG" alt="imagen 1">
+            <input id="texto1" type="text">
+        </div>
+        <div class="opcion">
+            <img class="imagen" src="./assets/img/ejercicio2imagen2.JPG" alt="imagen 2">
+            <input id="texto2" type="text">
+        </div>
+        <div class="opcion">
+            <img class="imagen" src="./assets/img/ejercicio2imagen3.JPG" alt="imagen 3">
+            <input id="texto3" type="text">
+        </div>
+    </div>
+    <div class="mensajes">
+        <h4 id="mensaje"></h4>
+        <button onclick="
+            msg = document.querySelector('#mensaje')
+            cantidad1 = Number(document.querySelector('#texto1').value)
+            cantidad2 = Number(document.querySelector('#texto2').value)
+            cantidad3 = Number(document.querySelector('#texto3').value)
+            total = cantidad1 + cantidad2 + cantidad3
+            if(total<=10){
+                msg.innerHTML = 'Llevas ' + total + ' stickers'
+            }else{
+                msg.innerHTML = 'Llevas desmasiados stickets'
+            }
+        ">Verificar</button>
+    </div>
+</body>
+</html>

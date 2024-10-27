@@ -1,0 +1,30 @@
+.foto{
+    width: 30%;
+    height: 30%;
+}
+.cuadro{
+    width: 20%;
+    padding: 3%;
+    border: 2px solid black;
+    text-align: center;
+}
+.imagen{
+    width: 40%;
+    height: 40%;
+    padding: 2%;
+}
+.conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opcion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mensajes{
+    text-align: center;
+    padding: 2%;
+}

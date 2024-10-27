@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Desafio 2 - Ejercicio 3</title>
+</head>
+<body>
+    <div class="cuadro">
+        Ingresa el Password:  
+        <br><br>
+        <select name="digito1" id="digito1">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <select name="digito2" id="digito2">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <select name="digito3" id="digito3">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <br><br>
+        <button onclick="
+            mensaje=document.querySelector('#texto')
+            password=Number(document.querySelector('#digito1').value + document.querySelector('#digito2').value + document.querySelector('#digito3').value)
+            if(password == 911){
+                mensaje.innerHTML='Password 1 Correcto'
+            }else if(password == 714){
+                mensaje.innerHTML='Password 2 Correcto'
+            }else{
+                mensaje.innerHTML='Password Incorrecto'
+            }
+        ">Ingresar</button>
+        <br>
+        <p id="texto"></p>
+    </div>
+</body>
+</html>
